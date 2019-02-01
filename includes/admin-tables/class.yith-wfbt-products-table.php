@@ -176,6 +176,8 @@ if( ! class_exists( 'YITH_WFBT_Products_Table' ) ) {
                 $where .= " AND {$s}";
             }
 
+            $where  = apply_filters( 'yith_wfbt_linked_products_where', $where );
+
             $paged  = isset( $_GET['paged'] ) ? $q['number'] * ( intval( $_GET['paged'] ) - 1 ) : 0;
             $items  = $wpdb->get_results( "SELECT p.ID AS product_id, pm.meta_value AS data FROM {$wpdb->posts} AS p INNER JOIN {$wpdb->postmeta} AS pm ON p.ID = pm.post_id WHERE $where", ARRAY_A );
 

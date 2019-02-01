@@ -129,6 +129,9 @@ if ( ! class_exists( 'YITH_WFBT_Discount' ) ) {
 
             empty( $data ) && $data = $this->get_product_data( $product );
 
+            $discount_perc = isset( $data['discount_percentage'] ) ? intval( $data['discount_percentage'] ) : 0;
+
+            // check for type
             if( ! in_array( $data['discount_type'], array( 'percentage', 'fixed' ) ) ){
                 return false;
             }
@@ -138,11 +141,8 @@ if ( ! class_exists( 'YITH_WFBT_Discount' ) ) {
             elseif( $data['discount_type'] == 'fixed' && ! floatval( $data['discount_fixed'] ) ){
                 return false;
             }
-            elseif( $data['discount_type'] == 'percentage' ){
-                $p = intval( $data['discount_percentage'] );
-                if( ! $p || $p < 0 || $p > 100 ) {
-                    return false;
-                }
+            elseif( $data['discount_type'] == 'percentage' && ( ! $discount_perc || $discount_perc > 100 || $discount_perc < 0 ) ){
+                return false;
             }
             elseif( $data['discount_min_spend'] ){
 

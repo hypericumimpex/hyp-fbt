@@ -172,12 +172,12 @@ if ( ! class_exists( 'YITH_WFBT_Multivendor' ) ) {
 		public function show_only_vendor_products( $where ){
 
 			if( empty( $this->vendor_products ) ){
-				$where .= ' AND 1=-1';
+				$where .= ' AND 1=2';
 			}
 			else {
 
 				$post_in = implode(',', $this->vendor_products );
-				$where .= " AND a.post_id IN ( $post_in )";
+				$where .= " AND pm.post_id IN ( $post_in )";
 			}
 
 			return $where;

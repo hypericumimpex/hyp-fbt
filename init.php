@@ -3,7 +3,7 @@
  * Plugin Name: HYP Fbt
  * Plugin URI: https://github.com/hypericumimpex/hyp-fbt/
  * Description: <code><strong>HYP Frequently Bought Together</strong></code> permite creșterea conversiei magazinului, prin afișarea mai frecventă a unei oferte cu produsele achiziționate împreună. În acest fel, utilizatorii sunt încurajați să adauge mai multe produse în coșul lor, la fel ca pe Amazon.
- * Version: 1.3.7
+ * Version: 1.3.9
  * Author: Romeo C.
  * Author URI: https://github.com/romeo.covaci/
  * Text Domain: yith-woocommerce-frequently-bought-together
@@ -13,7 +13,7 @@
  *
  * @author Romeo C.
  * @package HYP Fbt
- * @version 1.3.7
+ * @version 1.3.9
  */
 /*  Copyright 2015  Your Inspiration Themes  (email : plugins@yithemes.com)
 
@@ -59,7 +59,7 @@ register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
 
 if ( ! defined( 'YITH_WFBT_VERSION' ) ){
-	define( 'YITH_WFBT_VERSION', '1.3.7' );
+	define( 'YITH_WFBT_VERSION', '1.3.9' );
 }
 
 if ( ! defined( 'YITH_WFBT' ) ) {

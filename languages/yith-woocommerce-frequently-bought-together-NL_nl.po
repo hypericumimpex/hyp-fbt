@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: YITH WooCommerce Frequently Bought Together\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/init\n"
 "POT-Creation-Date: 2018-10-26 12:47:58+00:00\n"
-"PO-Revision-Date: 2018-09-20 12:09+0100\n"
+"PO-Revision-Date: 2018-10-31 20:19+0000\n"
 "Last-Translator: \n"
 "Language-Team: YIThemes <plugins@yithemes.com>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.13\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: _e;_n:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
@@ -613,15 +613,16 @@ msgid "This Product"
 msgstr "Dit Product"
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "YITH WooCommerce Frequently Bought Together Premium"
-msgstr "Veelvuldig Samen Gekocht"
+msgstr "YITH WooCommerce Frequently Bought Together Premium"
 
 #. Plugin URI of the plugin/theme
 msgid ""
 "https://yithemes.com/themes/plugins/yith-woocommerce-frequently-bought-"
 "together/"
 msgstr ""
+"https://yithemes.com/themes/plugins/yith-woocommerce-frequently-bought-"
+"together/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -632,14 +633,21 @@ msgid ""
 "\"https://yithemes.com/\" target=\"_blank\">Get more plugins for your e-"
 "commerce shop on <strong>YITH</strong></a>."
 msgstr ""
+"De <code> <strong> YITH WooCommerce vaak samen gekocht </strong> </code> "
+"maakt het verhogen van de gemiddelde besteed van uw winkel door het tonen "
+"van een doos met de producten bij elkaar gekocht vaker. Op deze wijze, "
+"worden de gebruikers aangemoedigd om meer producten aan hun kar enkel als op "
+"Amazonië toe te voegen. < a href = \"https://yithemes.com/\" target = "
+"\"_blank\" > Haal meer plugins voor uw e-commerce shop op <strong> YITH </"
+"strong> </a>."
 
 #. Author of the plugin/theme
 msgid "YITH"
-msgstr ""
+msgstr "YITH"
 
 #. Author URI of the plugin/theme
 msgid "https://yithemes.com/"
-msgstr ""
+msgstr "https://yithemes.com/"
 
 #~ msgid "Plugin Documentation"
 #~ msgstr "Plugin Documentatie"

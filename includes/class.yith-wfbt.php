@@ -112,6 +112,9 @@ if ( ! class_exists( 'YITH_WFBT' ) ) {
 			// retro compatibility with older metas
             add_filter( 'get_post_metadata', array( $this, 'get_meta' ), 10, 4 );
             add_filter( 'update_post_metadata', array( $this, 'update_meta' ), 10, 4 );
+
+            // register Gutenberg Block
+            add_action( 'init', array( $this, 'register_gutenberg_block' ), 10 );
 		}
 
 		/**
@@ -269,6 +272,33 @@ if ( ! class_exists( 'YITH_WFBT' ) ) {
             }
 
             return $check;
+        }
+
+        /**
+         * Register plugin Gutenberg block
+         *
+         * @since 1.3.7
+         * @author Francesco Licandro
+         * @return void
+         */
+        public function register_gutenberg_block(){
+            $block = array(
+                'ywfbt-blocks' => array(
+                    'title'          => _x( 'Frequently Bought Form', '[gutenberg]: block name', 'yith-woocommerce-frequently-bought-together' ),
+                    'description'    => _x( 'With this block you can print a product "frequently bought together" form.', '[gutenberg]: block description', 'yith-woocommerce-frequently-bought-together' ),
+                    'shortcode_name' => 'ywfbt_form',
+                    'do_shortcode'   => false,
+                    'attributes'     => array(
+                        'product_id'      => array(
+                            'type'    => 'text',
+                            'label'   => _x( 'Add the product id (leave blank to get global product value)', '[gutenberg]: attributes description', 'yith-woocommerce-frequently-bought-together' ),
+                            'default' => '',
+                        )
+                    ),
+                ),
+            );
+
+            yith_plugin_fw_gutenberg_add_blocks( $block );
         }
 	}
 }
